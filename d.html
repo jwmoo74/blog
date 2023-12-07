@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS3 Property Basic</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+
+        /* font */
+        .pretendard {
+            font-family: "Pretendard Variable";
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .margin {
+            width: 960px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        header {
+            padding: 10px 0 7px 0;
+            border-bottom: solid 1px gray;
+        }
+        #logo {
+            padding-top: 2px;
+            text-align: center;
+        }
+        nav {
+           
+            padding: 10px 0 15px 57px;
+            text-align: center;
+        }
+        nav li {
+            font-size: 15px;
+            padding: 10px 71px 10px 71px;
+            list-style-type: none;
+            display: inline;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #5393D9;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #5393D9;
+        }
+        nav a:hover:after {
+            width: 70%;
+            left: 15%;
+        }
+        .clear {
+            clear: both;
+        }
+        footer {
+            clear: both;
+            border-top: solid 1px rgb(188, 188, 188);
+            text-align: center;
+            background-color: rgb(225, 225, 225);
+            padding: 10px 0 10px 0;
+            margin-top: 300px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        a { 
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: #5393D9;
+        }
+        aside ul{
+            margin-top: 10px;
+            float: left;
+        }
+        aside li {
+            list-style-type: none;
+        }
+        section {
+            float: left;
+            padding-left: 20px;
+        }
+        nav a#licolor:after {
+            left: 15%;
+            width: 70%;
+        }
+        #intro:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #5393D9;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
+        #intro:hover {
+            color: #5393D9;
+        }
+
+        #intro:hover:after {
+            width: 70%;
+            left: 15%;
+            width: 70%;
+        }
+        #intro2:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #5393D9;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
+        #intro2:hover {
+            color: #5393D9;
+        }
+
+        #intro2:hover:after {
+            width: 70%;
+            left: 15%;
+            width: 70%;
+        }
+        #licolor {
+            color: #5393D9;
+        }
+    </style>
+</head>
+    <body class="pretendard">
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="./img/logo.png"></a>
+            </div>
+        </header>
+        <nav>
+            <ul class="margin">
+                <a href="a.html" ><li>소개 </li></a>
+                <a href="b.html" ><li>일상</li></a>
+                <a href="c.html" id="licolor"><li>작업물</li></a>
+                <a href="h.html" ><li>Fav.Artist</li></a>
+                <a href="i.html"><li>Fav.Song</li></a>
+            </ul>
+        </nav>
+        <aside class="margin">
+            <ul>
+                <li style="background-color: #5393D9; width: 150px; color: white; 
+                padding: 10px 0 10px 7px;"><h3>과제</h3></li>
+                <li style="padding: 7px 0 7px 0; border-bottom: solid 1px #cdcdcd; width: 150px; font-size: 15px; ">
+                    <a href="c.html">웹퍼블리싱</a></li>
+                <li style="padding: 7px 0 7px 0; border-bottom: solid 1px #cdcdcd; width: 150px; font-size: 15px; font-weight: bold;"><a href="d.html">콘텐츠 디자인</a></li>
+                <li style="padding: 7px 0 7px 0; border-bottom: solid 1px #cdcdcd; width: 150px; font-size: 15px;"><a href="f.html">모션그래픽스</a></li>
+                <li style="padding: 7px 0 20px 0; border-bottom: solid 1px #cdcdcd; width: 150px; font-size: 15px;"><a href="g.html">3D디자인</a></li>
+                <li style="background-color: #5393D9; width: 150px; color: white; 
+                padding: 10px 0 10px 7px;"><h3>촬영</h3></li>
+                <li style="padding: 7px 0 7px 0; border-bottom: solid 1px #cdcdcd; width: 150px; font-size: 15px;"><a href="jm.html">증명사진</a></li>
+                <li style="padding: 7px 0 7px 0; border-bottom: solid 1px #cdcdcd; width: 150px; font-size: 15px;"><a href="snap.html">스냅사진</a></li>
+            </ul>
+        </aside>
+        <section class="margin">
+        <video src="./img/condi.mp4" controls width="810px"></video>
+        <h4>나츠미상과 텐진마츠리에서 생긴 일?</h4>
+        <p style="color: #cdcdcd;">Figma</p><br>
+        <p style="font-weight: 400; font-size: 15px; line-height: 25px; padding-bottom: 100px;" >
+            일본 엔화에서 콘텐츠를 찾아 텐진마츠리를 배경으로 하는 연애시뮬레이션 게임홍보용 페이지를 만들었습니다. 콘텐츠는 배너, 영상, 팝업, <br>캐릭터 
+            프로필 등이 있으며 영상을 통해 게임이 어떻게 진행되는지에 대해 조금 더 자세히 알 수 있습니다다. 또한 알아두면 좋은 것 팝업창과 <br>캐릭터 프로필의 
+            내용을 통하여 나츠미상에게 호감도를 높일 수 있습니다.
+        </p>
+        </section>
+        <footer>
+            Copyright ⓒ 2023 jwmoo74, All Right Reserved <br>
+            웹퍼블러싱 ㅣ 직무수행능력평가2 ㅣ D 22361028 김정우 ｜ wkjnmw@kaywon.ac.kr
+        </footer>
+    </body>
+</html>

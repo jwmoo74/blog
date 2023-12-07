@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS3 Property Basic</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+
+        /* font */
+        .pretendard {
+            font-family: "Pretendard Variable";
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .margin {
+            width: 960px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        header {
+            padding: 10px 0 7px 0;
+            border-bottom: solid 1px gray;
+        }
+        #logo {
+            padding-top: 2px;
+            text-align: center;
+        }
+        nav {
+           
+            padding: 10px 0 15px 57px;
+            text-align: center;
+        }
+        nav li {
+            font-size: 15px;
+            padding: 10px 71px 10px 71px;
+            list-style-type: none;
+            display: inline;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #5393D9;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #5393D9;
+        }
+        nav a:hover:after {
+            width: 70%;
+            left: 15%;
+        }
+        .clear {
+            clear: both;
+        }
+        aside {
+            width: 960px;
+            padding-top: 30px;
+        }
+        aside div {
+            float: left;
+            margin-right: 20px;
+        }
+        aside li {
+            list-style-type: none;
+            font-size: large;
+            margin-left: 20px;
+            padding-bottom: 20px;
+        }
+        footer {
+            clear: both;
+            border-top: solid 1px rgb(188, 188, 188);
+            text-align: center;
+            background-color: rgb(225, 225, 225);
+            padding: 10px 0 10px 0;
+            margin-top: 170px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        a { 
+            text-decoration: none;
+            color: black;
+        }
+        #licolor {
+            color: #5393D9;
+        }
+        section {
+            border-top: solid 1px gray;
+            padding-top: 40px;
+            clear: both;
+        }
+        nav a#licolor:after {
+            left: 15%;
+            width: 70%;
+        }
+        #intro:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #5393D9;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
+        #intro:hover {
+            color: #5393D9;
+        }
+
+        #intro:hover:after {
+            width: 70%;
+            left: 15%;
+            width: 70%;
+        }
+        #intro2:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #5393D9;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
+        #intro2:hover {
+            color: #5393D9;
+        }
+
+        #intro2:hover:after {
+            width: 70%;
+            left: 15%;
+            width: 70%;
+        }
+    </style>
+</head>
+    <body class="pretendard">
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="./img/logo.png"></a>
+            </div>
+        </header>
+        <nav>
+            <ul class="margin">
+                <a href="a.html" id="licolor"><li>소개 </li></a>
+                <a href="b.html"><li>일상</li></a>
+                <a href="c.html"><li>작업물</li></a>
+                <a href="h.html" ><li>Fav.Artist</li></a>
+                <a href="i.html"><li>Fav.Song</li></a>
+            </ul>
+        </nav>
+        <aside class="margin">
+            <div>
+                <img src="./img/profile.png" width="300px">
+            </div>
+            <div>
+                <ul>
+                    <li><b>이름</b> : 김정우</li>
+                    <li><b>생년월일</b> : 2003. 07. 04.</li>
+                    <li><b>소속</b> : 계원예술대학교 </li>
+                    <li><b>스킬</b> : <img src="./img/vs.png" width="30px"> &nbsp; <img src="./img/figma.png" width="30px">&nbsp;
+                                    <img src="./img/ai.png" width="30px"> &nbsp; <img src="./img/After effect.png" width="30px"></li>
+                    <li><b>링크</b> : <a href="https://www.instagram.com/jw_moo74/"><img src="./img/insta.webp" width="30px"></a></li>
+                </ul>
+            </div>
+        </aside>
+        <section class="margin">
+            <h1>안녕하세요:></h1>
+            <p style="margin-top: 15px;">안녕하세요. 저는 계원예술대학교 디지털미디어디자인과에 재학중인 1학년 D반 김정우입니다. </p>
+            <h1 style="padding-top: 40px;">학교생활</h1>
+            <p p style="margin-top: 15px; line-height: 22px;">고등학교 시절, 나는 도대체 무얼하고 살아야 할까...? 하는 고민에 이만저만이 아니었어요. 
+                그런 고민 끝에 예고를 자퇴했던 과거를 딛고, 다시 한 번 계원예술대학교에 입학하게 되었습니다. 디지털미디어디자인과에 
+                들어온 이유는 주변에 코딩을 하는 사람이 많았어서 관심을 가지게 되었고, 인생고민을 할 적 아무리 생각해도 내가 좋아하는 
+                건 디자인이다 싶어서 디자인+코딩을 같이 배울 수 있는 대학교를 많이 찾아보다가 선택하게 되었습니다. <br><br>
+                그렇게 대학교에 들어오게 된 저는 사실상 너무 힘들었습니다. 디자인에 대한 많은 경험이 없었고, 모든 툴을 처음 다뤄봤습니다.
+                기본적인 일러스트, 포토샵도 하기 너무 어려웠던 저는 앞길이 막막했지만 오리엔테이션 때 들었던 교수님들의 이야기로 하루하루를 
+                버텨왔습니다. 그 말은 "지금 당장은 못해도 열심히 끝까지 하면 된다." 라는 이야기 (많이 함축되어있는 내용입니다)였습니다. 
+                그렇게 학교생활을 열심히 즐기며 과제도 나름 열심히 했다고 생각합니다. ㅎㅎ
+            </p>
+            <h1 style="padding-top: 40px;">앞으로의 계획</h1>
+            <p p style="margin-top: 15px; line-height: 22px;">저는 학교를 졸업하고 군대를 가겠다는 생각을 했습니다. 이 글을 적는
+            지금(2023.12.06.)은 세부전공을 디자인과 프로그래밍 중 고민 중입니다. 1차 선택에서 디자인을 선택하였으니 얘기해보자면 3D디자인 수업을
+            듣다보니 관심이 생겨 인생계획을 조금 짜보았습니다. 뉴미디어 관련한 2학년 생활을 진행하고, 군대를 갔다와서 포트폴리오 준비를 하고 
+            취업에 나가자! 라는 간단한 계획을 세워보았어요.
+            </p>
+            <p style="text-align: center; padding-top: 150px;">Sometimes even to live is an act of courage. <br>
+                -Seneca-</p>
+        </section>
+        <footer>
+            Copyright ⓒ 2023 jwmoo74, All Right Reserved <br>
+            웹퍼블러싱 ㅣ 직무수행능력평가2 ㅣ D 22361028 김정우 ｜ wkjnmw@kaywon.ac.kr
+        </footer>
+    </body>
+</html>

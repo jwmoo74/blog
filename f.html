@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS3 Property Basic</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+
+        /* font */
+        .pretendard {
+            font-family: "Pretendard Variable";
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .margin {
+            width: 960px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        header {
+            padding: 10px 0 7px 0;
+            border-bottom: solid 1px gray;
+        }
+        #logo {
+            padding-top: 2px;
+            text-align: center;
+        }
+        nav {
+           
+            padding: 10px 0 15px 57px;
+            text-align: center;
+        }
+        nav li {
+            font-size: 15px;
+            padding: 10px 71px 10px 71px;
+            list-style-type: none;
+            display: inline;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #5393D9;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #5393D9;
+        }
+        nav a:hover:after {
+            width: 70%;
+            left: 15%;
+        }
+        .clear {
+            clear: both;
+        }
+        footer {
+            clear: both;
+            border-top: solid 1px rgb(188, 188, 188);
+            text-align: center;
+            background-color: rgb(225, 225, 225);
+            padding: 10px 0 10px 0;
+            margin-top: 300px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        a { 
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: #5393D9;
+        }
+        aside ul{
+            margin-top: 10px;
+            float: left;
+        }
+        aside li {
+            list-style-type: none;
+        }
+        section {
+            float: left;
+            padding-left: 20px;
+        }
+        nav a#licolor:after {
+            left: 15%;
+            width: 70%;
+        }
+        #intro:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #5393D9;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
+        #intro:hover {
+            color: #5393D9;
+        }
+
+        #intro:hover:after {
+            width: 70%;
+            left: 15%;
+            width: 70%;
+        }
+        #intro2:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #5393D9;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
+        #intro2:hover {
+            color: #5393D9;
+        }
+
+        #intro2:hover:after {
+            width: 70%;
+            left: 15%;
+            width: 70%;
+        }
+        #licolor {
+            color: #5393D9;
+        }
+    </style>
+</head>
+    <body class="pretendard">
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="./img/logo.png"></a>
+            </div>
+        </header>
+        <nav>
+            <ul class="margin">
+                <a href="a.html" ><li>소개 </li></a>
+                <a href="b.html" ><li>일상</li></a>
+                <a href="c.html" id="licolor"><li>작업물</li></a>
+                <a href="h.html" ><li>Fav.Artist</li></a>
+                <a href="i.html" ><li>Fav.Song</li></a>
+            </ul>
+        </nav>
+        <aside class="margin">
+            <ul>
+                <li style="background-color: #5393D9; width: 150px; color: white; 
+                padding: 10px 0 10px 7px;"><h3>과제</h3></li>
+                <li style="padding: 7px 0 7px 0; border-bottom: solid 1px #cdcdcd; width: 150px; font-size: 15px; ">
+                    <a href="c.html">웹퍼블리싱</a></li>
+                <li style="padding: 7px 0 7px 0; border-bottom: solid 1px #cdcdcd; width: 150px; font-size: 15px;"><a href="d.html">콘텐츠 디자인</a></li>
+                <li style="padding: 7px 0 7px 0; border-bottom: solid 1px #cdcdcd; width: 150px; font-size: 15px; font-weight: bold;"><a href="f.html">모션그래픽스</a></li>
+                <li style="padding: 7px 0 20px 0; border-bottom: solid 1px #cdcdcd; width: 150px; font-size: 15px;"><a href="g.html">3D디자인</a></li>
+                <li style="background-color: #5393D9; width: 150px; color: white; 
+                padding: 10px 0 10px 7px;"><h3>촬영</h3></li>
+                <li style="padding: 7px 0 7px 0; border-bottom: solid 1px #cdcdcd; width: 150px; font-size: 15px;"><a href="jm.html">증명사진</a></li>
+                <li style="padding: 7px 0 7px 0; border-bottom: solid 1px #cdcdcd; width: 150px; font-size: 15px;"><a href="snap.html">스냅사진</a></li>
+            </ul>
+        </aside>
+        <section class="margin">
+        <video src="./img/motion.mp4" controls width="810px"></video>
+        <h4>Coraline Title Sequence</h4>
+        <p style="color: #cdcdcd;">After Effects</p><br>
+        <p style="font-weight: 400; font-size: 15px; line-height: 25px; padding-bottom: 100px;" >
+            영화 "코렐라인"의 타이틀 시퀀스를 만들어보았습니다. 주요 줄거리를 추려 일러스트로 장면을 제작하여 진행하였습니다. 줄거리를 간단히 <br>
+            소개하자면 이사를 온 주인공이 바쁜 부모님에게 관심을 받지 못하여 심심해 하던 중 다른 세계로 넘어가는 통로를 발견합니다. 그 세계의 <br>
+            단추눈을 한 부모님은 온갖 관심을 쏟아부어주는 세계이지만 사실 엄마의 행세를 한 마녀 벨담이 아이들을 단추눈으로 만들어 영혼을 얻고 <br>
+            영생을 얻어가려 하여 주인공이 헤쳐나오게 되는 스토리입니다. 
+        </p>
+        </section>
+        <footer>
+            Copyright ⓒ 2023 jwmoo74, All Right Reserved <br>
+            웹퍼블러싱 ㅣ 직무수행능력평가2 ㅣ D 22361028 김정우 ｜ wkjnmw@kaywon.ac.kr
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS3 Property Basic</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+
+        /* font */
+        .pretendard {
+            font-family: "Pretendard Variable";
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .margin {
+            width: 960px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        header {
+            padding: 10px 0 7px 0;
+            border-bottom: solid 1px gray;
+        }
+        #logo {
+            padding-top: 2px;
+            text-align: center;
+        }
+        nav {
+           
+            padding: 10px 0 15px 57px;
+            text-align: center;
+        }
+        nav li {
+            font-size: 15px;
+            padding: 10px 71px 10px 71px;
+            list-style-type: none;
+            display: inline;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #5393D9;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #5393D9;
+        }
+        nav a:hover:after {
+            width: 70%;
+            left: 15%;
+        }
+        .clear {
+            clear: both;
+        }
+        aside {
+            width: 960px;
+            padding-top: 30px;
+        }
+        aside div {
+            float: left;
+            margin-right: 20px;
+        }
+        aside li {
+            list-style-type: none;
+            font-size: large;
+            margin-left: 20px;
+        }
+        footer {
+            clear: both;
+            border-top: solid 1px rgb(188, 188, 188);
+            text-align: center;
+            background-color: rgb(225, 225, 225);
+            padding: 10px 0 10px 0;
+            margin-top: 100px;
+            font-size: 15px;
+            line-height: 25px;
+            font-weight: 400;
+        }
+        a { 
+            text-decoration: none;
+            color: black;
+        }
+        #licolor {
+            color: #5393D9;
+        }
+        section {
+            border-top: solid 1px gray;
+            clear: both;
+        }
+        nav a#licolor:after {
+            left: 15%;
+            width: 70%;
+        }
+        #intro:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #5393D9;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
+        #intro:hover {
+            color: #5393D9;
+        }
+
+        #intro:hover:after {
+            width: 70%;
+            left: 15%;
+            width: 70%;
+        }
+        #intro2:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #5393D9;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
+        #intro2:hover {
+            color: #5393D9;
+        }
+
+        #intro2:hover:after {
+            width: 70%;
+            left: 15%;
+            width: 70%;
+        }
+    </style>
+</head>
+    <body class="pretendard">
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="./img/logo.png"></a>
+            </div>
+        </header>
+        <nav>
+            <ul class="margin">
+                <a href="a.html" ><li>소개 </li></a>
+                <a href="b.html"><li>일상</li></a>
+                <a href="c.html"><li>작업물</li></a>
+                <a href="h.html" id="licolor"><li>Fav.Artist</li></a>
+                <a href="i.html"><li>Fav.Song</li></a>
+            </ul>
+        </nav>
+        <aside class="margin">
+            <div>
+                <img src="./img/kimgryun.png" width="300px">
+            </div>
+            <div>
+                <ul>
+                    <li><b><img src="./img/Kimgryun_name.jpg"></li>
+                    <li><p style="font-weight: 450; color: gray; padding-bottom: 10px;">Digital Artist & Motion Designer</p></li>
+                    <li><a href="https://g-ryun.com/projects" ><p style="font-weight: 450; text-decoration: underline;">Portfolio</p></a></li>
+                    <li><p style="padding-top: 20px;">좋아하는 이유</p></li>
+                    <li><p style="font-weight: 450; color: rgb(37, 37, 37); font-size: 15px; padding-top: 5px;">
+                        sns를 통해 우연히 3D 툴을 활용한 영상을 보았는데, 작업물이 경이로울 정도로 멋있었습니다. 그래서 <br>
+                        나도 언젠가는 이런 프로젝트를 꼭 한 번은 해보고 싶다는 마음에 들었습니다.
+                        </p></li>
+                </ul>
+            </div>
+        </aside>
+        <section class="margin">
+            <img src="./img/gryn345.jpg" width="100%"><br>
+            <p style="font-weight: 450; color: gray; padding-bottom: 10px;">출처: kimgryun_instagram_https://www.instagram.com/kimgryun/</p>
+        </section>
+
+
+        <aside class="margin" style="border-top: solid 1px #444;">
+            <div>
+                <img src="./img/Dedouze_profile.jpg" width="300px">
+            </div>
+            <div>
+                <ul>
+                    <li><b><img src="./img/Dedouze_name.jpg"></li>
+                    <li><p style="font-weight: 400; color: gray; padding-bottom: 10px;">3D Artist & Motion Designer</p></li>
+                    <li><a href="https://linktr.ee/dedouze" ><p style="font-weight: 450; text-decoration: underline;">Portfolio</p></a></li>
+                    <li><p style="padding-top: 20px;">좋아하는 이유</p></li>
+                    <li><p style="font-weight: 450; color: rgb(37, 37, 37); font-size: 15px; padding-top: 5px;">
+                        릴스를 통해 우연히 보게 된 아티스트입니다. 2D 일러스트를 3D블랜더 프로그램을 통하여 2D와 3D의 <br>
+                        관계를 허물어 작업하는 것이 엄청 개성이 있고, 작업물이 예뻐서 좋아하게 됐습니다. 
+                        </p></li>
+                </ul>
+            </div>
+        </aside>
+        <section class="margin">
+            <img src="./img/Dedouz_ga.jpg" width="100%"><br>
+            <p style="font-weight: 400; color: gray; padding-bottom: 10px;">출처: Dedouze_instagram_https://www.instagram.com/dedouze/</p>
+        </section>
+
+        <aside class="margin" style="border-top: solid 1px #444;">
+            <div>
+                <img src="./img/Jongminkim_profile.png" width="300px">
+            </div>
+            <div>
+                <ul>
+                    <li><b><img src="./img/KimJongmin_name.jpg"></li>
+                    <li><p style="font-weight: 400; color: gray; padding-bottom: 10px;">Developer, Designer, Maker</p></li>
+                    <li><a href="https://blog.cmiscm.com/?page_id=6127"><p style="font-weight: 450; text-decoration: underline;">Portfolio</p></a></li>
+                    <li><p style="padding-top: 20px;">좋아하는 이유</p></li>
+                    <li><p style="font-weight: 450; color: rgb(37, 37, 37); font-size: 15px; padding-top: 5px;">
+                        유튜브에 구글 엔지니어의 포트폴리오가 알고리즘에서 한창 유행 할 때 접하게 된 분입니다. <br>
+                        사실상 대학교를 정하기 시작 할 때도 여러번 다시 찾아봤던 분입니다. 디자인과 개발의 <br>
+                        조합을 보니 놀라웠습니다.
+                        </p></li>
+                </ul>
+            </div>
+        </aside>
+        <section class="margin">
+            <img src="./img/jongminkimm.jpg" width="100%"><br>
+            <p style="font-weight: 400; color: gray;">출처: cmiscm_blog_https://blog.cmiscm.com/?page_id=6127</p>
+        </section>
+        <footer>
+            Copyright ⓒ 2023 jwmoo74, All Right Reserved <br>
+            웹퍼블러싱 ㅣ 직무수행능력평가2 ㅣ D 22361028 김정우 ｜ wkjnmw@kaywon.ac.kr
+        </footer>
+    </body>
+</html>

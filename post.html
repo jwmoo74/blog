@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS3 Property Basic</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+
+        /* font */
+        .pretendard {
+        font-family: "Pretendard Variable";
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .margin {
+            width: 960px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        header {
+            padding: 10px 0 7px 0;
+            border-bottom: solid 1px gray;
+        }
+        #logo {
+            padding-top: 2px;
+            text-align: center;
+        }
+        nav {
+           
+            padding: 10px 0 15px 57px;
+            text-align: center;
+        }
+        nav li {
+            font-size: 15px;
+            padding: 10px 71px 10px 71px;
+            list-style-type: none;
+            display: inline;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #5393D9;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #5393D9;
+        }
+        nav a:hover:after {
+            width: 70%;
+            left: 15%;
+        }
+        .clear {
+            clear: both;
+        }
+        section {
+            padding-top: 30px;
+            width: 100%;
+        }
+        section ul{
+            padding-left: 30px;
+        }
+        section li{
+            list-style-type: none;
+        }
+        section tr, td {
+            vertical-align: top; 
+        }
+        section table {
+            padding-left: 20%;
+        }
+        footer {
+            clear: both;
+            border-top: solid 1px rgb(188, 188, 188);
+            text-align: center;
+            background-color: rgb(225, 225, 225);
+            padding: 10px 0 10px 0;
+            margin-top: 300px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        a { 
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: #5393D9;
+        }
+        #licolor {
+            color: #5393D9;
+        }
+        .tc {
+            text-align: center;
+        }
+        td img {
+            transition: transform 0.3s ease;
+        } 
+        td img:hover {
+            transform: scale(1.03);
+        }
+        table td{
+            padding-bottom: 10px;
+        }
+        nav a#licolor:after {
+            left: 15%;
+            width: 70%;
+        }
+        #intro:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #5393D9;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
+        #intro:hover {
+            color: #5393D9;
+        }
+
+        #intro:hover:after {
+            width: 70%;
+            left: 15%;
+            width: 70%;
+        }
+        #intro2:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #5393D9;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
+        #intro2:hover {
+            color: #5393D9;
+        }
+
+        #intro2:hover:after {
+            width: 70%;
+            left: 15%;
+            width: 70%;
+        }
+        #intro3:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #5393D9;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
+        #intro3:hover {
+            color: #5393D9;
+        }
+
+        #intro3:hover:after {
+            width: 70%;
+            left: 15%;
+            width: 70%;
+        }
+        #intro4:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #5393D9;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
+        #intro4:hover {
+            color: #5393D9;
+        }
+
+        #intro4:hover:after {
+            width: 70%;
+            left: 15%;
+            width: 70%;
+        }
+    </style>
+</head>
+    <body class="pretendard">
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="./img/logo.png"></a>
+            </div>
+        </header>
+        <nav>
+            <ul class="margin">
+                <a href="a.html" id="intro"><li>소개 </li></a>
+                <a href="b.html" id="intro4"><li>일상</li></a>
+                <a href="c.html" id="intro2"><li>작업물</li></a>
+                <a href="h.html" id="intro3"><li>Fav.Artist</li></a>
+                <a href="i.html" id="licolor"><li>Fav.Song</li></a>
+            </ul>
+        </nav>
+        <section class="margin">
+            
+            <table>
+                <tr>
+                    <td><img src="./img/sunflower.png"></a></td>
+                    <td>
+                        <ul>
+                            <li><b>Sunflower</b></li>
+                            <li style="padding-top: 5px;">Post malone</li>
+                            <li style="padding-top: 207px;"><audio src="./img/audio_sf.mp3" controls></audio></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <a href="i.html"><img src="./img/back.png" width="40px" style="padding-left: 80%;"></a>
+        </section>
+        <footer>
+            Copyright ⓒ 2023 jwmoo74, All Right Reserved <br>
+            웹퍼블러싱 ㅣ 직무수행능력평가2 ㅣ D 22361028 김정우 ｜ wkjnmw@kaywon.ac.kr
+        </footer>
+    </body>
+</html>
